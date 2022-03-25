@@ -1,0 +1,16 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Add Articles</h1>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" name="title" id="" aria-describedby="title" #newTitle>
+      <br>
+      <label for="link">Link</label>
+      <input type="text" class="form-control" name="link" id="" aria-describedby="title" #newLink>    
+    </div>    
+    <br>
+    <button class="btn btn-primary" (click)="addArticle(newTitle, newLink)">Add Article</button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
