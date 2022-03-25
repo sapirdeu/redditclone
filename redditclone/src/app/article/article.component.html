@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">{{article.votes}}</h5>
+                <h5 class="card-title">Points</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{article.title}}<a href="{{article.link}}" style="float: right;">{{article.link}}</a></h5>
+                    <!-- <h5 class="card-title"><a href="{{article.link}}">{{article.link}}</a></h5> -->
+                    <a class="btn btn-success btn-sm float-left" (click)="voteUp()">Vote Up</a>
+                    <a class="btn btn-warning btn-sm" style="float: right;" (click)="voteDown()">Vote Down</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
